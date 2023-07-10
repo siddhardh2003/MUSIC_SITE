@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/15535b8567.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Spotify</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+
+<body>
+
+  <div id="Spotify_HomePage">
+    <!-- Sidebar -->
+    <div class="sidebar d-none d-md-inline" style="background-color:black">
+
+      <div class="logo">
+        <a href="#" class="navbar-brand" style="color:white;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-spotify ml-0 mr-2" viewBox="0 0 16 16" style="color:green;">
+            <path
+              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z">
+            </path>
+          </svg>Botify</a>
+      </div>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill mr-2" viewBox="0 0 16 16">
+          <path
+            d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z">
+          </path>
+        </svg>Home</a>
+      <a href="Spotify_clone.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-2" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+        </svg>Search</a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-list mr-2" viewBox="0 0 16 16">
+          <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"></path>
+          <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"></path>
+          <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"></path>
+          <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"></path>
+        </svg>Your Library</a>
+
+
+      <div class="sb-foot mb-0 mt-100px " style="padding:20px">
+        <button type="button " class="btn btn-dark langauge" style="border-radius:10px;background-color:black;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+            <path
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z">
+            </path>
+          </svg> English</button>
+      </div>
+
+    </div>
+    <!-- Page content -->
+    <div class="content ">
+      <!-- navbar -->
+      <section id="navbar">
+        <nav class="navbar navbar-light navbar-expand-lg nav-change">
+          <div class="logo2 d-md-none">
+            <a href="#" class="navbar-brand" style="color:white;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-spotify ml-0 mr-2" viewBox="0 0 16 16" style="color:green;">
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z">
+                </path>
+              </svg>Botify</a>
+          </div>
+          <div class="arrows mr-auto ">
+            <a href="Spotify_clone.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"></path>
+              </svg></a>
+            <a href="Spotify_clone.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+              </svg></a>
+          </div>
+          <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <div class="mr-auto mt-3">
+                <a href="#" class="d-inline d-lg-none "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill mr-2" viewBox="0 0 16 16">
+                    <path
+                      d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z">
+                    </path>
+                  </svg>Home</a>
+              </div>
+              <div class="mr-auto mt-3">
+                <a href="#" class="d-inline d-lg-none "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-2" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                  </svg>Search</a>
+              </div>
+              <div class="mr-auto mt-3">
+                <a href="#" class="d-inline d-lg-none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-list mr-2" viewBox="0 0 16 16">
+                    <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"></path>
+                    <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"></path>
+                    <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"></path>
+                    <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"></path>
+                  </svg>Your Library</a>
+              </div>
+              <div class="mr-auto mt-3 ml-2">
+                <a id="signUpId2" class="abc my-auto mr-2 ml-2 d-inline d-lg-none" href="#">Sign-Up</a>
+              </div>
+              <div class="mr-auto mt-3 ">
+                <button type="button" class="btn btn-light d-inline d-lg-none" style="border-radius: 20px;font-weight:600;margin-left:15px;">Log In</button>
+              </div>
+              <ul class="navbar-nav ml-auto">
+                <a class="abc my-auto mr-2 d-none d-lg-inline" href="#">Premium </a>
+                <a class="abc my-auto mr-2 d-none d-lg-inline" href="#">Support </a>
+                <a class="abc my-auto mr-2 d-none d-lg-inline" href="#">Download </a>
+                <i class="fa-regular fa-pipe d-none d-lg-inline" style="height:30px; width:2px;border-radius:10px;background-color:white; color: #eff3fb;margin-left: 10px;margin-right: 10px;"></i>
+                <a id="signUpId" class="abc my-auto mr-2 ml-2 d-none d-lg-inline ml-md-0" href="#">Sign-Up</a>
+                <button type="button" class="btn btn-light d-none d-lg-inline" style="border-radius: 20px;font-weight:600;margin-left:15px;">Log In</button>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- body -->
+      <div class="spotify-body">
+
+
+        <div class="container-fluid body-container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="main-heading">Focus</h1>
+            </div>
+            <div class="cards-align-container">
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e3a03829bed283a3d72bcdf0" class="shadow card-image" />
+                <h1 class="card-heading">Deep Focus</h1>
+                <p class="card-para">Keep calm and focus with ambient and post ...</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- line2 -->
+
+            <div class="col-12">
+              <h1 class="main-heading">Focus</h1>
+            </div>
+            <div class="cards-align-container">
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e3a03829bed283a3d72bcdf0" class="shadow card-image" />
+                <h1 class="card-heading">Deep Focus</h1>
+                <p class="card-para">Keep calm and focus with ambient and post ...</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- line3 -->
+
+            <div class="col-12">
+              <h1 class="main-heading">Focus</h1>
+            </div>
+            <div class="cards-align-container">
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e3a03829bed283a3d72bcdf0" class="shadow card-image" />
+                <h1 class="card-heading">Deep Focus</h1>
+                <p class="card-para">Keep calm and focus with ambient and post ...</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-design mr-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" class="shadow card-image" />
+                <h1 class="card-heading">Peaceful-Piano</h1>
+                <p class="card-para">Peaceful piano to help you slow down, breath ....</p>
+                <div class="card-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill icon-design" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="container">
+          <footer class="row border-top">
+
+            <div class="col-12 col-md-4 col-l-3 mb-3">
+              <h5>Companies</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jobs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For The Records</a></li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-4 col-l-3 mb-3">
+              <h5>Communites</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Artists</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Developers</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Adevrtising</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inventors</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Vendors</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Botify For Work</a></li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-4 col-l-3 mb-3">
+              <h5>Useful Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Support</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Free Mobile APP</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cookies</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Legal</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Center</a></li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-12 col-l-3 logos mt-5">
+              <a href="#"><i class="fab fa-facebook-square fa-2x logo" aria-hidden="true"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x logo" aria-hidden="true"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x logo" aria-hidden="true"></i></a>
+              <a href="#"><i class="fab fa-youtube fa-2x logo" aria-hidden="true"></i></a>
+            </div>
+
+          </footer>
+        </div>
+        <!-- <hr> -->
+        <div class="text-center p-3" style="background-color: black;text-align: Center;">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z">
+              </path>
+            </svg>
+            2023 Botify
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- signup page -->
+  <div id="Spotify_SignUp">
+    <div id="signUpCard" class="signUpPage d-none">
+      <!-- <img class="image-spotify" src="https://images.squarespace-cdn.com/content/v1/6042529f1fe38f0b0503be5c/1616072527567-YHOUT1L2JW6ROBTME3SQ/spotify-playlist.jpeg?format=1000w"/> -->
+      <input id="UserNameInput" class="input-design" placeholder="UserName" />
+      <input type="password" id="PasswordInput" class="input-design" placeholder="Password" />
+      <button id="signInDone" class="button-design">Sign In</button>
+      <button id="closeCard" class="closeButton-design">Close</button>
+      <p id="IncPara"></p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="dynamic.js"> </script>
+</body>
+
+</html>
